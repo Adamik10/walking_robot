@@ -1,0 +1,58 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: #282c34;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+}
+
+button {
+  width: 500px;
+  height: 200px;
+  margin: 40px 20px 0px 20px;
+  background-color: #282c34;
+  border: 1px solid #626b80;
+  border-radius: 20px;
+  color: #a9b9dd;
+  font-family: Roboto, sans-serif;
+  font-size: calc((10px + 1.5vmin));
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #a9b9dd;
+  color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 3vmin);
+  color: white;
+}
+
+p span {
+  font-weight: 700;
+  color: #61dafb;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-body {
+  background-color: #282c34;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

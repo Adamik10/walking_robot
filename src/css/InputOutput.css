@@ -1,0 +1,246 @@
+.input {
+  width: 50vw;
+  max-width: 3000px;
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 100px;
+  outline: 1px solid #61dafb;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+  box-shadow: 0px 0px 60px ease-in #baf0ff3b;
+  animation: haloEffect 3s infinite;
+}
+
+@keyframes haloEffect {
+  0% {
+    outline: 1px solid #61dafb;
+    box-shadow: 0px 0px 60px #baf0ff3b;
+  }
+  50% {
+    outline: 2px solid #def8ff;
+    box-shadow: 0px 0px 120px #baf0ff9c;
+  }
+  100% {
+    outline: 1px solid #61dafb;
+    box-shadow: 0px 0px 60px #baf0ff3b;
+  }
+}
+
+.input form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input form div p:first-child {
+  line-height: 150%;
+  font-size: calc(10px + 2vmin);
+}
+
+.input form div div:first-of-type {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.input form div:last-child {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input form div.tab {
+  display: none;
+}
+
+.input form div.tab.active {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.step {
+  height: 60px;
+  width: 60px;
+  margin: 20px 15px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+input {
+  background-color: #626b80;
+  border: none;
+  border-radius: 20px;
+  color: #61dafb;
+  margin: 0px 20px 0px 20px;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  font-size: calc(10px + 6vmin);
+  overflow-wrap: break-word;
+  word-break: break-all;
+  font-family: Roboto, sans-serif;
+}
+
+input::placeholder {
+  color: #282c34;
+  font-size: calc(10px + 2vmin);
+  max-width: 500px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+select {
+  width: 500px;
+  height: 200px;
+  background-color: #282c34;
+  border-radius: 10px;
+  color: #61dafb;
+  font-size: calc(10px + 2vmin);
+  padding: 50px;
+}
+
+textarea {
+  background-color: #626b80;
+  border: none;
+  border-radius: 20px;
+  color: #61dafb;
+  margin: 0px 20px 0px 20px;
+  width: 1200px;
+  height: 480px;
+  font-family: Roboto, sans-serif;
+  font-size: calc(10px + 1.5vmin);
+  overflow-wrap: break-word;
+  word-break: break-all;
+  text-align: left;
+  resize: none;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+textarea::placeholder {
+  color: #282c34;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+form div input[type="submit"] {
+  width: 500px;
+  height: 200px;
+  margin: 40px 20px 0px 20px;
+  background-color: #282c34;
+  border: 1px solid #626b80;
+  border-radius: 20px;
+  color: #a9b9dd;
+  font-size: calc((10px + 1.5vmin));
+}
+form div input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #a9b9dd;
+  color: #282c34;
+}
+
+.warning {
+  color: #ff0062;
+}
+
+.App-logo {
+  margin-top: 150px;
+  height: 14vmin;
+  pointer-events: none;
+  transform-origin: 7vmin 9vmin;
+  filter: drop-shadow(0px 0px 50px #181a1f96);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.output {
+  width: 30vw;
+  height: 50vh;
+  margin: 100px;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  box-shadow: 5px 5px 100px #181a1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.robotMessage {
+  font-size: calc(10px + 1.5vmin);
+  line-height: 150%;
+  width: 1000px;
+  height: 500px;
+  background-color: #626b80;
+  padding: 90px 30px;
+  margin-top: 300px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.3);
+}
+
+.pointer {
+  height: 90px;
+  width: 90px;
+  background: #626b80;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  border-radius: 0 0 12px 0;
+  margin-top: -530px;
+  position: relative;
+  left: calc(0.5vw -5px);
+}
+
+p.robotMessage.initial {
+  color: #def8ff81;
+}
